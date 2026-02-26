@@ -159,7 +159,7 @@ export const LoginPage = () => {
 
         {/* Footer */}
         <p className="text-center text-sm text-gray-600 mt-6">
-          Coastal Eats © 2024 - All rights reserved
+          Coastal Eats © 2026 - All rights reserved
         </p>
       </div>
     </div>
