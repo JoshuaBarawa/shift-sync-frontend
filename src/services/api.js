@@ -8,8 +8,6 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
 });
-
-// Add authorization token to requests
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('accessToken');
@@ -22,8 +20,6 @@ api.interceptors.request.use(
     return Promise.reject(error);
   }
 );
-
-// Handle responses and errors
 api.interceptors.response.use(
   (response) => response,
   (error) => {

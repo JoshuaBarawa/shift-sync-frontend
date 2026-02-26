@@ -1,4 +1,3 @@
-// components/layout/Header.jsx
 import { Bell, LogOut, User, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth } from '../../hooks/useAuth';

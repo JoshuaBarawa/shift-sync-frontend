@@ -13,8 +13,6 @@ const STATUS_STYLES = {
   draft:      'bg-gray-100 text-gray-500',
   cancelled:  'bg-red-100 text-red-600',
 };
-
-// ── Drop request modal ────────────────────────────────────────
 const DropModal = ({ shift, onClose, onSubmit, isPending }) => {
   const [reason, setReason] = useState('');
   return (
@@ -54,8 +52,6 @@ const DropModal = ({ shift, onClose, onSubmit, isPending }) => {
     </div>
   );
 };
-
-// ── Swap request modal ────────────────────────────────────────
 const SwapModal = ({ shift, onClose, onSubmit, isPending }) => {
   const [reason, setReason] = useState('');
   return (
@@ -98,8 +94,6 @@ const SwapModal = ({ shift, onClose, onSubmit, isPending }) => {
     </div>
   );
 };
-
-// ── Main component ────────────────────────────────────────────
 export const MyScheduleView = () => {
   const { user } = useAuth();
   const queryClient = useQueryClient();

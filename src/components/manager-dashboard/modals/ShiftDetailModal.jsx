@@ -7,8 +7,6 @@ import { formatStatus } from '../../../utils/formatters';
 import { ConfirmDialog } from '../../common/ConfirmDialog';
 import { toastManager } from '../../common/Toast';
 import { formatDistanceToNow } from 'date-fns';
-
-// ─── Inline Audit Trail ───────────────────────────────────────
 const ACTION_LABELS = {
   shift_created:     { label: 'Created',        color: 'bg-blue-100 text-blue-700' },
   shift_updated:     { label: 'Updated',        color: 'bg-yellow-100 text-yellow-700' },

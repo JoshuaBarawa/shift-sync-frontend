@@ -21,8 +21,6 @@ const queryClient = new QueryClient({
     },
   },
 });
-
-// Protected Route Component
 const ProtectedRoute = ({ children, requiredRole = null }) => {
   const { user, loading, isAuthenticated, isManager, isStaff } = useAuth();
 

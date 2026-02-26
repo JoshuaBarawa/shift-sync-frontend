@@ -1,10 +1,7 @@
-// components/common/NotificationsPanel.jsx
 import { X, Bell, Check, CheckCheck } from 'lucide-react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { formatDistanceToNow } from 'date-fns';
 import api from '../../services/api';
-
-// --- Notification type colors ---
 const TYPE_STYLES = {
   shift_assigned:    'bg-blue-50 border-blue-200',
   shift_unassigned:  'bg-orange-50 border-orange-200',
